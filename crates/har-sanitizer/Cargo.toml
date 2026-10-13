@@ -1,0 +1,40 @@
+[package]
+name = "har-sanitizer"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+description = "Redact cookies, tokens, and secrets from HAR files before you share them. Fast CLI, Rust library, and WebAssembly build."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/screendesk/screendesk-dev-utilities"
+homepage = "https://screendesk.io/tools/har-file-analyzer"
+documentation = "https://docs.rs/har-sanitizer"
+readme = "README.md"
+keywords = ["har", "sanitize", "redact", "security", "devtools"]
+categories = ["command-line-utilities", "development-tools::debugging", "web-programming"]
+exclude = [".github/"]
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[[bin]]
+name = "har-sanitizer"
+path = "src/main.rs"
+required-features = ["cli"]
+
+[features]
+default = ["cli"]
+cli = ["dep:clap"]
+wasm = ["dep:wasm-bindgen"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+regex = { version = "1", default-features = false, features = ["std", "unicode-perl"] }
+percent-encoding = "2"
+clap = { version = "4", features = ["derive"], optional = true }
+wasm-bindgen = { version = "0.2", optional = true }
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

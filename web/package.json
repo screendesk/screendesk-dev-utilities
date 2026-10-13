@@ -1,0 +1,29 @@
+{
+  "name": "screendesk-dev-utilities",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Free, open-source, client-side tools for developers, QA, and support teams. Live at screendesk.io/tools.",
+  "homepage": "https://screendesk.io/tools",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out",
+    "sync": "node ../scripts/sync-from-marketing.mjs"
+  },
+  "dependencies": {
+    "@heroicons/react": "2.0.10",
+    "clsx": "^1.2.1",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.3.3"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}
