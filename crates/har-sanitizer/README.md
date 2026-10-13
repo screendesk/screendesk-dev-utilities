@@ -12,6 +12,12 @@
 </p>
 
 <p align="center">
+  <a href="https://crates.io/crates/har-sanitizer"><img src="https://img.shields.io/crates/v/har-sanitizer.svg" alt="crates.io"></a>
+  <a href="https://docs.rs/har-sanitizer"><img src="https://img.shields.io/docsrs/har-sanitizer" alt="docs.rs"></a>
+  <a href="https://github.com/screendesk/screendesk-dev-utilities/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
+</p>
+
+<p align="center">
   <a href="https://screendesk.io/tools/har-file-analyzer"><strong>Try it in your browser</strong></a> ·
   <a href="#install"><strong>Install</strong></a> ·
   <a href="#use-it-in-ci"><strong>Use it in CI</strong></a> ·
