@@ -792,7 +792,7 @@ We appreciate you.
           <VideoCameraIcon aria-hidden="true" className={`${ui.listIcon} mt-0.5`} />
           <div>
             <h3 className="text-sm font-medium text-zinc-900">Complex issue? Send a video instead.</h3>
-            <p className="mt-0.5 text-sm text-zinc-500">Screendesk customers resolve tickets 42% faster with video responses.</p>
+            <p className="mt-0.5 text-sm text-zinc-500">Reply with a screen recording when words aren’t enough.</p>
             <a href="https://app.screendesk.io/users/sign_up" className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-zinc-900 hover:text-rose-600">
               Try Screendesk free<ArrowRightIcon aria-hidden="true" className="size-4" />
             </a>

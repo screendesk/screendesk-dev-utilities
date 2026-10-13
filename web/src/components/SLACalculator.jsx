@@ -152,7 +152,7 @@ export function SLACalculator() {
               </div>
               <p className={ui.hint}>Based on an 80% efficiency factor</p>
               <div className="mt-5 border-t border-zinc-200 pt-5">
-                <p className="mb-4 text-sm text-zinc-500">Want to improve these metrics? Screendesk helps support teams resolve tickets 42% faster with video.</p>
+                <p className="mb-4 text-sm text-zinc-500">Want to improve these metrics? Screendesk helps support teams resolve tickets faster with video.</p>
                 <a href="https://app.screendesk.io/users/sign_up" className={`${ui.primaryButton} w-full`}>Try Screendesk free</a>
               </div>
             </div>

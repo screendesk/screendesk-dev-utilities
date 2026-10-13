@@ -206,7 +206,7 @@ export function BurnoutCalculator() {
     score.complexity >= 12 && {
       icon: VideoCameraIcon,
       title: 'Use video support',
-      description: 'Reduce back-and-forth by 42% with video responses. Screendesk helps agents resolve complex issues faster.',
+      description: 'Cut back-and-forth with video responses. Screendesk helps agents resolve complex issues faster.',
     },
     score.support >= 12 && {
       icon: AcademicCapIcon,

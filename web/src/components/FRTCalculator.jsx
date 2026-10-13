@@ -86,7 +86,7 @@ export function FRTCalculator() {
     if (frtMinutes > benchmark.good) {
       recommendations.push({
         title: 'Use Video Responses',
-        description: 'Teams using Screendesk reduce response time by 42% by sending quick video explanations instead of lengthy emails.',
+        description: 'Send a quick video explanation instead of a long email. It’s faster to record and easier for the customer to follow.',
         icon: VideoCameraIcon,
       })
     }
