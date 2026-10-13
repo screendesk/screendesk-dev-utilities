@@ -38,3 +38,7 @@ wasm-bindgen = { version = "0.2", optional = true }
 lto = true
 codegen-units = 1
 strip = true
+
+# Rust now emits bulk-memory and other post-MVP instructions for wasm32; wasm-opt must be told to accept them.
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ["-O", "--enable-bulk-memory", "--enable-nontrapping-float-to-int", "--enable-sign-ext", "--enable-mutable-globals"]
